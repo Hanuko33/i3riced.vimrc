@@ -163,8 +163,9 @@ map <F10> :source ~/.vimrc<cr>
 "map L :e .<cr>
 "map <S-Right> <C-w>v
 "map <S-Up> <C-w>s
-map <C-S> :set nohlsearch<cr>
+map <C-x> :set nohlsearch<cr>
 map <C-a> :set hlsearch<cr>
+map <C-s> /<tab>
 
 "   _    _   _____    _____   _    _   _        _____    _____   _    _   _______ 
 "  | |  | | |_   _|  / ____| | |  | | | |      |_   _|  / ____| | |  | | |__   __|
