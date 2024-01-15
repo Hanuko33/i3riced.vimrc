@@ -8,3 +8,4 @@ after installing, use :PlugInstall, and install the completion thing (using CoC)
 4: On right of the bar, there are errors thing (that's not what I want)\
 5: Weird font (missing things), first fix: install nerdfont (kinda obvious), 
 second of all, some Plugins here aren't working very good yet
+6: Coc doesn't start with error something about node. Install / Update nodejs
