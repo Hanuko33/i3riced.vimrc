@@ -148,6 +148,7 @@ set nocompatible
 "
 
 map <S-F5> :redraw!<cr>
+nnoremap <S-c> :echo "ENTERING SYSTEM CLIPBOARD" <cr>"*
 map <C-k> :Tags<cr>
 nnoremap <C-f> :Files<cr>
 nnoremap <C-b> :Buffers<cr>
