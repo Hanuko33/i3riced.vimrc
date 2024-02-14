@@ -20,6 +20,9 @@ call plug#begin()
 " Command autocompletion
 Plug 'gelguy/wilder.nvim'
 
+" GoLang
+Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
+
 " Startscreen
 Plug 'mhinz/vim-startify'
 
@@ -149,6 +152,7 @@ set nocompatible
 
 map <S-F5> :redraw!<cr>
 nnoremap <S-c> :echo "ENTERING SYSTEM CLIPBOARD" <cr>"*
+nnoremap <S-q> :echo "ENTERING C-c SYSTEM CLIPBOARD" <cr>"+
 map <C-k> :Tags<cr>
 nnoremap <C-f> :Files<cr>
 nnoremap <C-b> :Buffers<cr>
