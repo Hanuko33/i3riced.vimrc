@@ -38,6 +38,10 @@ Plug 'coreyja/fzf.devicon.vim'
 " Comment plugin (use gc)
 Plug 'tpope/vim-commentary'
 
+" GruvBox
+Plug 'gruvbox-community/gruvbox'
+Plug 'shinchu/lightline-gruvbox.vim'
+
 " Line
 Plug 'itchyny/lightline.vim'
 
@@ -185,19 +189,21 @@ map <S-C-Right> :new<cr>
 "  |_|  |_| |_____|  \_____| |_|  |_| |______| |_____|  \_____| |_|  |_|    |_|   
 "
 
+set bg=dark
+colorscheme gruvbox
 " Cursor color
-hi Cursor guifg=#ffffff ctermfg=white
+" hi Cursor guifg=#ffffff ctermfg=white
 " Comment color
-hi Comment ctermfg=14 guifg=#80a0ff
+" hi Comment ctermfg=14 guifg=#80a0ff
 " Normal text color
-hi Normal ctermfg=white ctermbg=darkblue guifg=#eeeeee guibg=#111122
+" hi Normal ctermfg=white ctermbg=darkblue guifg=#eeeeee guibg=#111122
 " Search highlight color
-hi Search ctermbg=white ctermfg=black guifg=#000000 guibg=#ffffff
+" hi Search ctermbg=white ctermfg=black guifg=#000000 guibg=#ffffff
 " Visual selection color
-hi Visual ctermbg=white ctermfg=black guifg=#000000 guibg=#ffffff
+" hi Visual ctermbg=white ctermfg=black guifg=#000000 guibg=#ffffff
 " Coc colors
-hi CocFadeOut ctermfg=gray guifg=#555555 ctermbg=black guibg=#000000
-hi CocHighlightText ctermfg=gray guifg=#555555 ctermbg=black guibg=#000000
+" hi CocFadeOut ctermfg=gray guifg=#555555 ctermbg=black guibg=#000000
+" hi CocHighlightText ctermfg=gray guifg=#555555 ctermbg=black guibg=#000000
 
 
 " startify settings
@@ -206,3 +212,5 @@ let s:header_cmd = 'echo'
 let g:startify_custom_header =
     \ startify#center(split(system(s:header_cmd), '\n'))
 
+let g:lightline = {}
+let g:lightline.colorscheme = 'gruvbox'
