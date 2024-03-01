@@ -126,7 +126,9 @@ set term=kitty
 " vim only features
 set nocompatible
 
-
+" set spacing
+set nuw=5
+autocmd VimEnter :%left 5
 
 " MACRO EXPLAINING:
 " 1: q: Start macro recorder
@@ -157,6 +159,7 @@ map <C-k> :Tags<cr>
 nnoremap <C-f> :Files<cr>
 nnoremap <C-b> :Buffers<cr>
 map <F8> :set nu!<cr>
+map <S-F8> :set rnu!<cr>
 map <F2> :w<cr>
 map <F9> :!pmake<cr>
 map <F4> :!prun<cr>
