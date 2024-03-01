@@ -39,7 +39,7 @@ Plug 'coreyja/fzf.devicon.vim'
 Plug 'tpope/vim-commentary'
 
 " Line
-Plug 'vim-airline/vim-airline'
+Plug 'itchyny/lightline.vim'
 
 " Ru$t support
 Plug 'rust-lang/rust.vim'
