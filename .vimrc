@@ -20,6 +20,9 @@ call plug#begin()
 " Command autocompletion
 Plug 'gelguy/wilder.nvim'
 
+" Indent line
+Plug 'Yggdroot/indentLine'
+
 " GoLang
 Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 
@@ -205,6 +208,9 @@ colorscheme gruvbox
 " hi CocFadeOut ctermfg=gray guifg=#555555 ctermbg=black guibg=#000000
 " hi CocHighlightText ctermfg=gray guifg=#555555 ctermbg=black guibg=#000000
 
+" Indent settings
+let g:indentLine_char = '|'
+let g:indentLine_setColors = 1
 
 " startify settings
 let s:header_cmd = 'echo'
