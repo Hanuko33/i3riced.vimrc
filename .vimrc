@@ -33,6 +33,9 @@ Plug 'mhinz/vim-startify'
 Plug 'roxma/nvim-yarp'
 Plug 'roxma/vim-hug-neovim-rpc'
 
+" Colored parentheses
+Plug 'luochen1990/rainbow'
+
 " File search
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
@@ -100,9 +103,13 @@ call wilder#set_option('renderer', wilder#popupmenu_renderer(wilder#popupmenu_pa
 " |_____/  |______|    |_|       |_|    |_____| |_| \_|  \_____| |_____/ 
 "
 
+" Colored parentheses
+let g:rainbow_active = 1 
+
+" always show current position
+" set ruler
 " Disable text wrapping
 set nowrap
-
 " Tags
 set tags=/usr/include/tags,tags
 
@@ -133,9 +140,8 @@ set term=kitty
 " vim only features
 set nocompatible
 
-" set spacing
-set nuw=5
-autocmd VimEnter :%left 5
+" ignore case while searching
+set ignorecase
 
 " MACRO EXPLAINING:
 " 1: q: Start macro recorder
@@ -147,9 +153,6 @@ autocmd VimEnter :%left 5
 " 2: a: choose register
 " OR
 " @@: play last recorded macro
-
-
-
 
 "  __  __              _____    _____    _____   _   _    _____ 
 " |  \/  |     /\     |  __ \  |  __ \  |_   _| | \ | |  / ____|
@@ -183,6 +186,15 @@ map <C-a> :set hlsearch<cr>
 map <C-s> /<tab>
 map <S-C-Left> :vnew<cr>
 map <S-C-Right> :new<cr>
+
+" Brackets
+inoremap { {}<esc>i
+inoremap ' ''<esc>i
+inoremap " ""<esc>i
+inoremap [ []<esc>i
+inoremap ( ()<esc>i
+inoremap < <><esc>i
+map <C-L> %%x``x
 
 "   _    _   _____    _____   _    _   _        _____    _____   _    _   _______ 
 "  | |  | | |_   _|  / ____| | |  | | | |      |_   _|  / ____| | |  | | |__   __|
