@@ -193,7 +193,7 @@ inoremap ' ''<esc>i
 inoremap " ""<esc>i
 inoremap [ []<esc>i
 inoremap ( ()<esc>i
-inoremap < <><esc>i
+inoremap <C-,> <><esc>i
 map <C-L> %%x``x
 
 "   _    _   _____    _____   _    _   _        _____    _____   _    _   _______ 
