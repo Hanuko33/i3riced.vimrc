@@ -189,10 +189,10 @@ map <S-C-Right> :new<cr>
 
 " Brackets
 inoremap { {}<esc>i
-inoremap ' ''<esc>i
-inoremap " ""<esc>i
+" inoremap ' ''<esc>i
+" inoremap " ""<esc>i
 inoremap [ []<esc>i
-inoremap ( ()<esc>i
+" inoremap ( ()<esc>i
 inoremap <C-,> <><esc>i
 map <C-L> %%x``x
 
