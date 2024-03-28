@@ -20,6 +20,8 @@ call plug#begin()
 " Command autocompletion
 Plug 'gelguy/wilder.nvim'
 
+Plug 'jiangmiao/auto-pairs'
+
 " Indent line
 Plug 'Yggdroot/indentLine'
 
@@ -111,7 +113,7 @@ let g:rainbow_active = 1
 " Disable text wrapping
 set nowrap
 " Tags
-set tags=/usr/include/tags,tags
+set tags=tags,/usr/include/tags
 
 " Enable truecolor
 set termguicolors
@@ -133,7 +135,8 @@ set shiftwidth=4
 set expandtab
 
 " set term to kitty (my main terminal) for proper scaling
-set term=kitty
+set keyprotocol=xterm:mok2
+set term=xterm
 " comment above and uncomment for xterm
 "set term=xterm
 
@@ -162,6 +165,8 @@ set ignorecase
 " |_|  |_| /_/    \_\ |_|      |_|      |_____| |_| \_|  \_____|
 "
 
+nmap <S-C-Up> Vd<Up><Up>p
+nmap <S-C-Down> Vdp
 map <S-F5> :redraw!<cr>
 nnoremap <S-c> :echo "ENTERING SYSTEM CLIPBOARD" <cr>"*
 nnoremap <S-q> :echo "ENTERING C-c SYSTEM CLIPBOARD" <cr>"+
@@ -171,7 +176,7 @@ nnoremap <C-b> :Buffers<cr>
 map <F8> :set nu!<cr>
 map <S-F8> :set rnu!<cr>
 map <F2> :w<cr>
-map <F9> :!pmake<cr>
+map <F3> :!pmake<cr>
 map <F4> :!prun<cr>
 map <F5> :!pdebug<cr>
 map <F6> :cn<cr>
@@ -181,20 +186,20 @@ map <F10> :source ~/.vimrc<cr>
 "map L :e .<cr>
 "map <S-Right> <C-w>v
 "map <S-Up> <C-w>s
-map <C-x> :set nohlsearch<cr>
-map <C-a> :set hlsearch<cr>
-map <C-s> /<tab>
+nmap <C-x> :set nohlsearch<cr>
+nmap <C-a> :set hlsearch<cr>
+nmap <C-s> /<tab>
 map <S-C-Left> :vnew<cr>
 map <S-C-Right> :new<cr>
 
 " Brackets
-inoremap { {}<esc>i
+" inoremap { {}<esc>i
 " inoremap ' ''<esc>i
 " inoremap " ""<esc>i
-inoremap [ []<esc>i
+" inoremap [ []<esc>i
 " inoremap ( ()<esc>i
-inoremap <C-,> <><esc>i
-map <C-L> %%x``x
+" inoremap <C-,> <><esc>i
+" map <C-L> %%x``x
 
 "   _    _   _____    _____   _    _   _        _____    _____   _    _   _______ 
 "  | |  | | |_   _|  / ____| | |  | | | |      |_   _|  / ____| | |  | | |__   __|
