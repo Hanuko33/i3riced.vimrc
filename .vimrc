@@ -46,9 +46,12 @@ Plug 'coreyja/fzf.devicon.vim'
 " Comment plugin (use gc)
 Plug 'tpope/vim-commentary'
 
-" GruvBox
+" GruvBox theme
 Plug 'gruvbox-community/gruvbox'
 Plug 'shinchu/lightline-gruvbox.vim'
+
+" Catpucinni theme
+Plug 'catppuccin/vim', { 'as': 'catppuccin' }
 
 " Line
 Plug 'itchyny/lightline.vim'
@@ -111,7 +114,8 @@ let g:rainbow_active = 1
 " always show current position
 " set ruler
 " Disable text wrapping
-set nowrap
+" set nowrap
+
 " Tags
 set tags=tags,/usr/include/tags
 
@@ -209,8 +213,6 @@ map <S-C-Right> :new<cr>
 "  |_|  |_| |_____|  \_____| |_|  |_| |______| |_____|  \_____| |_|  |_|    |_|   
 "
 
-set bg=dark
-colorscheme gruvbox
 " Cursor color
 " hi Cursor guifg=#ffffff ctermfg=white
 " Comment color
@@ -235,5 +237,23 @@ let s:header_cmd = 'echo'
 let g:startify_custom_header =
     \ startify#center(split(system(s:header_cmd), '\n'))
 
-let g:lightline = {}
-let g:lightline.colorscheme = 'gruvbox'
+" Gruvbox
+" set bg=dark
+" colorscheme gruvbox
+" let g:lightline = {}
+" let g:lightline.colorscheme = 'gruvbox'
+
+" Catpucinni
+
+" colorscheme catppuccin
+" colorscheme catppuccin_latte
+" colorscheme catppuccin_frappe
+" colorscheme catppuccin_macchiato
+colorscheme catppuccin_mocha
+
+" let g:lightline = {'colorscheme': 'catppuccin'}
+" let g:lightline = {'colorscheme': 'catppuccin_latte'}
+" let g:lightline = {'colorscheme': 'catppuccin_frappe'}
+" let g:lightline = {'colorscheme': 'catppuccin_macchiato'}
+let g:lightline = {'colorscheme': 'catppuccin_mocha'}
+
