@@ -257,3 +257,6 @@ colorscheme catppuccin_mocha
 " let g:lightline = {'colorscheme': 'catppuccin_macchiato'}
 let g:lightline = {'colorscheme': 'catppuccin_mocha'}
 
+
+let &t_SI = "\e[6 q"
+let &t_EI = "\e[2 q"
