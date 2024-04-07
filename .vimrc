@@ -116,6 +116,8 @@ let g:rainbow_active = 1
 " Disable text wrapping
 " set nowrap
 
+" Cursorline
+set cursorline
 " Tags
 set tags=tags,/usr/include/tags
 
