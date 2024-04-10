@@ -118,6 +118,7 @@ let g:rainbow_active = 1
 
 " Cursorline
 set cursorline
+set cursorcolumn
 " Tags
 set tags=tags,/usr/include/tags
 
@@ -258,7 +259,5 @@ colorscheme catppuccin_mocha
 " let g:lightline = {'colorscheme': 'catppuccin_frappe'}
 " let g:lightline = {'colorscheme': 'catppuccin_macchiato'}
 let g:lightline = {'colorscheme': 'catppuccin_mocha'}
-
-
 let &t_SI = "\e[6 q"
 let &t_EI = "\e[2 q"
