@@ -261,3 +261,7 @@ colorscheme catppuccin_mocha
 let g:lightline = {'colorscheme': 'catppuccin_mocha'}
 let &t_SI = "\e[6 q"
 let &t_EI = "\e[2 q"
+let &t_SR.="\e[4 q" 
+set ttimeout
+set ttimeoutlen=1
+set ttyfast
