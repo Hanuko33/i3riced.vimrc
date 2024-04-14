@@ -199,6 +199,8 @@ nmap <C-s> /<tab>
 map <S-C-Left> :vnew<cr>
 map <S-C-Right> :new<cr>
 inoremap <C-d> <esc>ma$a;<esc>`aa
+inoremap <C-e> <esc>$a<cr>
+
 " Brackets
 " inoremap { {}<esc>i
 " inoremap ' ''<esc>i
