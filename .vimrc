@@ -20,6 +20,8 @@ call plug#begin()
 " Command autocompletion
 Plug 'gelguy/wilder.nvim'
 
+Plug 'tpope/vim-sensible'
+
 Plug 'jiangmiao/auto-pairs'
 
 " Indent line
@@ -56,7 +58,7 @@ Plug 'catppuccin/vim', { 'as': 'catppuccin' }
 " Line
 Plug 'itchyny/lightline.vim'
 
-" Ru$t support
+" Rust support
 Plug 'rust-lang/rust.vim'
 
 " Nerdfont icons
@@ -65,10 +67,29 @@ Plug 'ryanoasis/vim-devicons'
 " Markdown preview
 Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() }, 'for': ['markdown', 'vim-plug']}
 
-" Coc (autocompletion)
-Plug 'neoclide/coc.nvim', {'branch': 'release'}
+" Coc (autocompletion) trying to change to vim-lsp
+" Plug 'neoclide/coc.nvim', {'branch': 'release'}
+
+" LSP implementation for vim
+Plug 'SirVer/ultisnips'
+
+Plug 'prabirshrestha/asyncomplete.vim'
+Plug 'prabirshrestha/asyncomplete-lsp.vim'
+
+Plug 'prabirshrestha/async.vim'
+
+Plug 'mattn/vim-lsp-settings'
+
+Plug 'prabirshrestha/vim-lsp'
+
+Plug 'thomasfaingnaert/vim-lsp-snippets'
+Plug 'thomasfaingnaert/vim-lsp-ultisnips'
 
 call plug#end()
+
+let g:UltiSnipsJumpForwardTrigger="<tab>"
+
+" Autocompletion
 
 "  __          __  _____   _        _____    ______   _____  
 "  \ \        / / |_   _| | |      |  __ \  |  ____| |  __ \ 
