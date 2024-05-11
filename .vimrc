@@ -31,10 +31,6 @@ Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 " Startscreen
 Plug 'mhinz/vim-startify'
 
-" Deps
-Plug 'roxma/nvim-yarp'
-Plug 'roxma/vim-hug-neovim-rpc'
-
 " Colored parentheses
 Plug 'luochen1990/rainbow'
 
@@ -47,8 +43,8 @@ Plug 'coreyja/fzf.devicon.vim'
 Plug 'tpope/vim-commentary'
 
 " GruvBox theme
-Plug 'gruvbox-community/gruvbox'
-Plug 'shinchu/lightline-gruvbox.vim'
+" Plug 'gruvbox-community/gruvbox'
+" Plug 'shinchu/lightline-gruvbox.vim'
 
 " Catpucinni theme
 Plug 'catppuccin/vim', { 'as': 'catppuccin' }
@@ -61,9 +57,6 @@ Plug 'rust-lang/rust.vim'
 
 " Nerdfont icons
 Plug 'ryanoasis/vim-devicons'
-
-" Markdown preview
-Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() }, 'for': ['markdown', 'vim-plug']}
 
 " Coc (autocompletion) trying to change to vim-lsp
 " Plug 'neoclide/coc.nvim', {'branch': 'release'}
