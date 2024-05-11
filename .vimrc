@@ -17,8 +17,6 @@
 "                                                             
 
 call plug#begin()
-" Command autocompletion
-Plug 'gelguy/wilder.nvim'
 
 Plug 'tpope/vim-sensible'
 
@@ -87,39 +85,9 @@ Plug 'thomasfaingnaert/vim-lsp-ultisnips'
 
 call plug#end()
 
+" Autocompletion
 let g:UltiSnipsJumpForwardTrigger="<tab>"
 
-" Autocompletion
-
-"  __          __  _____   _        _____    ______   _____  
-"  \ \        / / |_   _| | |      |  __ \  |  ____| |  __ \ 
-"   \ \  /\  / /    | |   | |      | |  | | | |__    | |__) |
-"    \ \/  \/ /     | |   | |      | |  | | |  __|   |  _  / 
-"     \  /\  /     _| |_  | |____  | |__| | | |____  | | \ \ 
-"      \/  \/     |_____| |______| |_____/  |______| |_|  \_\
-"
-" the command autocompletion 
-"
-     
-" Start
-call wilder#setup({
-      \ 'modes': [':', '/', '?'],
-      \ 'enable_cmdline_enter': 0,
-      \ })
-
-call wilder#set_option('renderer', wilder#popupmenu_renderer(wilder#popupmenu_palette_theme({
-      \ 'border': 'rounded',
-      \ 'max_height': '75%',
-      \ 'min_height': 0,
-      \ 'prompt_position': 'top',
-      \ 'reverse': 0,
-      \ 'left': [
-      \   ' ', wilder#popupmenu_devicons(),
-      \ ],
-      \ 'right': [
-      \   ' ', wilder#popupmenu_scrollbar(),
-      \ ],
-      \ })))
 
 "   _____   ______   _______   _______   _____   _   _    _____    _____ 
 "  / ____| |  ____| |__   __| |__   __| |_   _| | \ | |  / ____|  / ____|
@@ -216,7 +184,7 @@ map <F10> :source ~/.vimrc<cr>
 "map <S-Up> <C-w>s
 nmap <C-x> :set nohlsearch<cr>
 nmap <C-a> :set hlsearch<cr>
-nmap <C-s> /<tab>
+nmap <C-s> /
 " map <S-C-Left> :vnew<cr>
 " map <S-C-Left> :vsplit<cr><C-w><right>
 map <S-C-Left> :vsplit<cr>
