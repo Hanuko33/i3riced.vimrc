@@ -218,9 +218,11 @@ nmap <C-x> :set nohlsearch<cr>
 nmap <C-a> :set hlsearch<cr>
 nmap <C-s> /<tab>
 " map <S-C-Left> :vnew<cr>
-map <S-C-Left> :vsplit<cr><C-w><right>
+" map <S-C-Left> :vsplit<cr><C-w><right>
+map <S-C-Left> :vsplit<cr>
 " map <S-C-Right> :new<cr>
-map <S-C-Right> :split<cr><C-w><down>
+" map <S-C-Right> :split<cr><C-w><down>
+map <S-C-Right> :split<cr>
 inoremap <C-d> <esc>ma$a;<esc>`aa
 inoremap <C-e> <esc>$a<cr>
 
