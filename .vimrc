@@ -20,8 +20,6 @@ call plug#begin()
 
 Plug 'tpope/vim-sensible'
 
-Plug 'jiangmiao/auto-pairs'
-
 " Indent line
 Plug 'Yggdroot/indentLine'
 
@@ -185,7 +183,7 @@ map <S-C-Left> :vsplit<cr>
 " map <S-C-Right> :split<cr><C-w><down>
 map <S-C-Right> :split<cr>
 inoremap <C-d> <esc>ma$a;<esc>`aa
-inoremap <C-e> <esc>$a<cr>
+" inoremap <C-e> <esc>$a<cr>
 
 " Brackets
 " inoremap { {}<esc>i
@@ -253,3 +251,4 @@ let &t_SR.="\e[4 q"
 set ttimeout
 set ttimeoutlen=1
 set ttyfast
+
