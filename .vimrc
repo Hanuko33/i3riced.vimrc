@@ -1,24 +1,12 @@
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-"   _   ____    _____    _                     _                  _                           
-"  (_) |___ \  |  __ \  (_)                   | |                (_)                          
-"   _    __) | | |__) |  _    ___    ___    __| |        __   __  _   _ __ ___    _ __    ___ 
-"  | |  |__ <  |  _  /  | |  / __|  / _ \  / _` |        \ \ / / | | | '_ ` _ \  | '__|  / __|
-"  | |  ___) | | | \ \  | | | (__  |  __/ | (_| |     _   \ V /  | | | | | | | | | |    | (__ 
-"  |_| |____/  |_|  \_\ |_|  \___|  \___|  \__,_|    (_)   \_/   |_| |_| |_| |_| |_|     \___|
-"
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-
-"  _____    _        _    _    _____   _____   _   _    _____ 
-" |  __ \  | |      | |  | |  / ____| |_   _| | \ | |  / ____|
-" | |__) | | |      | |  | | | |  __    | |   |  \| | | (___  
-" |  ___/  | |      | |  | | | | |_ |   | |   | . ` |  \___ \ 
-" | |      | |____  | |__| | | |__| |  _| |_  | |\  |  ____) |
-" |_|      |______|  \____/   \_____| |_____| |_| \_| |_____/ 
-"                                                             
-
+" /home/i3riced/.vimrc
+" Author: i3riced
 call plug#begin()
 
 Plug 'tpope/vim-sensible'
+Plug 'jasonccox/vim-wayland-clipboard'
+
+" AI
+Plug 'Exafunction/codeium.vim'
 
 " Indent line
 Plug 'Yggdroot/indentLine'
@@ -79,15 +67,6 @@ call plug#end()
 " Autocompletion
 let g:UltiSnipsJumpForwardTrigger="<tab>"
 
-
-"   _____   ______   _______   _______   _____   _   _    _____    _____ 
-"  / ____| |  ____| |__   __| |__   __| |_   _| | \ | |  / ____|  / ____|
-" | (___   | |__       | |       | |      | |   |  \| | | |  __  | (___  
-"  \___ \  |  __|      | |       | |      | |   | . ` | | | |_ |  \___ \ 
-"  ____) | | |____     | |       | |     _| |_  | |\  | | |__| |  ____) |
-" |_____/  |______|    |_|       |_|    |_____| |_| \_|  \_____| |_____/ 
-"
-
 " Colored parentheses
 let g:rainbow_active = 1 
 
@@ -122,8 +101,8 @@ set shiftwidth=4
 set expandtab
 
 " set term to kitty (my main terminal) for proper scaling
-set keyprotocol=xterm:mok2
-set term=xterm
+" set keyprotocol=xterm:mok2
+" set term=xterm
 " comment above and uncomment for xterm
 "set term=xterm
 
