@@ -75,6 +75,9 @@ let g:rainbow_active = 1
 " Disable text wrapping
 " set nowrap
 
+set mouse=a
+set ttymouse=sgr
+
 " Cursorline
 set cursorline
 set cursorcolumn
@@ -86,9 +89,6 @@ set termguicolors
 
 " Always show statusbar
 set laststatus=2
-
-" Mouse support
-set mouse=a
 
 " Encoding for nerdfont
 set encoding=UTF-8
@@ -104,7 +104,7 @@ set expandtab
 " set keyprotocol=xterm:mok2
 " set term=xterm
 " comment above and uncomment for xterm
-"set term=xterm
+" set term=xterm
 
 " vim only features
 set nocompatible
@@ -137,6 +137,7 @@ map <S-F5> :redraw!<cr>
 nnoremap <S-c> :echo "ENTERING SYSTEM CLIPBOARD" <cr>"*
 nnoremap <S-q> :echo "ENTERING C-c SYSTEM CLIPBOARD" <cr>"+
 map <C-k> :Tags<cr>
+map <C-p> :LspWorkspaceSymbolSearch<cr>
 nnoremap <C-f> :Files<cr>
 nnoremap <C-b> :Buffers<cr>
 map <F8> :set nu!<cr>
@@ -155,6 +156,9 @@ map <F10> :source ~/.vimrc<cr>
 nmap <C-x> :set nohlsearch<cr>
 nmap <C-a> :set hlsearch<cr>
 nmap <C-s> /
+nmap <C-[> :LspDeclaration<cr>
+nmap cw :LspNextWarning<cr>
+nmap ce :LspNextError<cr>
 " map <S-C-Left> :vnew<cr>
 " map <S-C-Left> :vsplit<cr><C-w><right>
 map <S-C-Left> :vsplit<cr>
@@ -231,3 +235,17 @@ set ttimeout
 set ttimeoutlen=1
 set ttyfast
 
+set nobackup
+set nowritebackup
+set noswapfile
+
+set include=./
+set path=./
+set showmatch
+set showfulltag
+set showmode
+set showcmd
+
+if filereadable("./vimrc.local")
+  source ~/.vimrc.local
+endif
