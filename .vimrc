@@ -101,7 +101,7 @@ set shiftwidth=4
 set expandtab
 
 " set term to kitty (my main terminal) for proper scaling
-" set keyprotocol=xterm:mok2
+set keyprotocol=xterm:mok2
 " set term=xterm
 " comment above and uncomment for xterm
 " set term=xterm
