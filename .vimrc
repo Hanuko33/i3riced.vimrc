@@ -131,6 +131,8 @@ set ignorecase
 " |_|  |_| /_/    \_\ |_|      |_|      |_____| |_| \_|  \_____|
 "
 
+" file tree thingy
+nmap <C-l> :vnew .<cr>10000<C-w><30<C-w>>
 nmap <S-C-Up> Vd<Up><Up>p
 nmap <S-C-Down> Vdp
 map <S-F5> :redraw!<cr>
